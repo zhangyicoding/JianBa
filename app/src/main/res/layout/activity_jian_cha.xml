@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JianChaActivity">
+
+    <TextView
+        android:id="@+id/jiancharen_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="检查人"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+
+
+    <EditText
+        android:id="@+id/jiancharen_et"
+        android:layout_width="match_parent"
+        android:layout_below="@id/jiancharen_title_tv"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/shoujiandanwei_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jiancharen_et"
+        android:text="受检单位"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <EditText
+        android:id="@+id/shoujiandanwei_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/shoujiandanwei_title_tv"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <RelativeLayout
+        android:id="@+id/jianchabiao_container"
+        android:layout_width="match_parent"
+        android:layout_below="@id/shoujiandanwei_et"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/jianchabiao_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:text="检查表"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="130dp" />
+
+        <Button
+            android:id="@+id/xiangdian_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="项点"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="306dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/yixuan_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/jianchabiao_container"
+        android:layout_above="@+id/baocun_btn"
+        android:dividerHeight="2dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="178dp"/>
+
+    <Button
+        android:id="@+id/baocun_btn"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="保存" />
+
+</RelativeLayout>
